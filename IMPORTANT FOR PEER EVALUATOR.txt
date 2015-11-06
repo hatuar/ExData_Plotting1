@@ -1,0 +1,6 @@
+
+** For peer evaluators: 
+   My computer 'locale' is FI-FI, which is in Finland,that is why weekdays in my plots are shown as
+     'to' -'pe' -'la' , instead of English speaking equivalents, but internally R stores them as same.
+	 
+	 

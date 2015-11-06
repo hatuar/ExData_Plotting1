@@ -1,0 +1,7 @@
+mydata <- read.csv("exdata_data_household_power_consumption/household_power_consumption.txt",sep=";", dec=".",na.strings="?")
+mydata$Date = as.Date(mydata$Date,format="%d/%m/%Y")
+sub.mydata <- subset(mydata, mydata$Date >= "2007-02-01" & mydata$Date <= "2007-02-02")
+hist(sub.mydata$Global_active_power, main="Global Active Power", col="Red",xlab="Global Active Power (kilowatts)")
+dev.copy(png,file="plot1.png", width=480, height=480)
+dev.off()
+cat("a plot has been created to the working directory")
